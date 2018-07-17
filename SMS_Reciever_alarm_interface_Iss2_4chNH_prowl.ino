@@ -565,7 +565,7 @@ void alarmStuff() {
 void uploadViaGPRS(char messageToSend[20]){
 
     Serial.println(messageToSend);
- char char1[] = "POST /prowl/example.php?API=05de2f8241285a5e4fa515a90ae00e2d7d4d4179&eventtitle=Alert&desc=";
+ char char1[] = "POST /prowl/example.php?API=************PRIVATE API KEY******************&eventtitle=Alert&desc=";
  char char2[] = "&systitle=ALARM%20SYSTEM HTTP/1.0\r\nHost: www.pickthall.co\r\n\r\n";
  strcat(http_cmd, char1);
  strcat(http_cmd, messageToSend);
